@@ -22,8 +22,9 @@ describe('async work?', () => {
         */
 
         for(const post of mockPosts) {
-           await waitFor(() => expect(screen.getByText(post.title)).toBeInTheDocument());
+            await waitFor(() => expect(screen.getByText(post.title)).toBeInTheDocument());
         }
+        
 
     });
 });
